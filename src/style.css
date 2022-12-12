@@ -9,7 +9,7 @@ body *{   margin: 0;  padding:0;  box-sizing:border-box; font-family: var(--fami
 /* Navbar style */
 a{text-decoration: none;}
 .navbar{display: flex; justify-content: space-between; align-items: center; background-color : var(--bg);
-color: #fff;height: 50px; position: relative; z-index: 2;}
+color: #fff;height: 50px; position: sticky; top: 0; z-index: 2; }
 
 .navbar a{   text-decoration: none; color: #fff; margin-right: 20px;}
 .navbar .logo{height: 90%;width: 100px;}
@@ -34,7 +34,7 @@ color: var(--body);width: 100px;margin-top: 20px;}
 .filter-element{ box-shadow: var(--shadow); color: var(--bg2); font-weight: bold;}
 
 /* Styled search component */
-.search{display: none; border: 2px solid;  background-image: url('./images/bg.jpg'); background-position: center;
+.search{display: none; border: 2px solid var(--bg2); background-image: url('./images/bg.jpg'); background-position: center;
 background-repeat: no-repeat;  background-size: cover;position: relative; height: 120px;}
 
 .search_container{ background-color: var(--bg); opacity: 0.8;   top: 0; width: 100%; 
