@@ -1,0 +1,124 @@
+:root{  --body: #fff; --bg2:#e96316;  --family: Verdana, Geneva, Tahoma, sans-serif;
+    --bg:rgba(0,0,85,1); --bg:#e96316; 
+ --shadow: 0px 0px 3px 2px rgb(204, 204, 166) inset;}
+body,html{overflow-x: hidden;}
+body{  margin: 0;  display: flex;  justify-content: center;  background-color: var(--body);} 
+body *{   margin: 0;  padding:0;  box-sizing:border-box; font-family: var(--family);}
+
+.app{ width: 95vw;}  
+/* Navbar style */
+a{text-decoration: none;}
+.navbar{display: flex; justify-content: space-between; align-items: center; background-color : var(--bg);
+color: #fff;height: 50px; position: relative; z-index: 2;}
+
+.navbar a{   text-decoration: none; color: #fff; margin-right: 20px;}
+.navbar .logo{height: 90%;width: 100px;}
+.navbar img{  width: 100%; height: 100%;}
+.navbar .aside{margin-left: 50%;}
+.navbar .services{display: none;}
+.navbar-hiden{display: flex; justify-content: space-between; transform: translateY(-50px); transition: 0.3s;
+position: relative; z-index: 1; }
+.hiden-link a{text-decoration:none; color: #fff; margin-right: 20px; }
+.hiden-link{background-color: #c58b6a; width: 50%; display: flex; justify-content: center; align-items: center;}
+
+/* Jumbotrone style */
+.jumbotron{box-shadow: 0px 0px 3px 2px rgb(204, 204, 166) inset; display: flex;  justify-content: space-around;align-items: center;
+height: 80vh; position: relative; margin-top: -40px;}
+.jumbotron_content{ font-size: 30px; width: 300px;  letter-spacing: 2px;  font-weight: bold;}
+.jumbotron_button{  border-radius: 20px;  cursor: pointer; background-color: var(--bg2);
+color: var(--body);width: 100px;margin-top: 20px;}
+.jumbotron_image{ width: 400px;  height: 300px;}
+.jumbotron_image img{  width: 100%; height: 100%;}
+
+/* Style for filter component */
+.filter-element{ box-shadow: var(--shadow); color: var(--bg2); font-weight: bold;}
+
+/* Styled search component */
+.search{display: none; border: 2px solid;  background-image: url('./images/bg.jpg'); background-position: center;
+background-repeat: no-repeat;  background-size: cover;position: relative; height: 120px;}
+
+.search_container{ background-color: var(--bg); opacity: 0.8;   top: 0; width: 100%; 
+height: 100%;   position: absolute; top: 0; left: 0; }
+
+.search_content{  background-color: var(--bg);  color: #fff;   margin-top: 10px; border-radius: 10px;}
+
+.search_content .welcome,.below_welcome{ margin-left: 10px; font-size: 10pt;}
+.below_welcome{font-size: 10px;}  
+.search_bar{display: flex; margin-top: 20px; height: 30px;
+    border: 2px solid; align-items: center; justify-content: center;
+    background-color: rgba(242, 242, 242, 1); border-radius: 20px;}
+
+.search_image{height: 100%;}
+.search_image img{height: 90%;}
+
+.search_bar .search_input{width: 90%; height: 100%; border: none; outline: none; border-radius: 20px;}
+.yellow_span{display: inline-block; width: 10px; height: 10px; border-radius: 100%;
+    background-color: yellow;}
+
+.search_content,.search_bar,.search_aside{
+position: relative;
+z-index: 1;
+}
+
+/* ****************************************************
+styel categories and myshop
+****************************************************** */
+.category-myshop{display: flex; justify-content: space-between;}
+.categories-parent-container{box-shadow: 0px 0px 3px 2px rgb(204, 204, 166) inset; width: 250px; cursor: pointer;}
+.categories-container{width:200px; margin: 10px 0px 0px 10px;}
+ .categories{height: 30px; width: 100%; display: flex; justify-content: space-between;}
+.category_image{width: 50px; height: 80%;}
+.category_image img{width: 100%; height: 100%;}
+
+.myshop{width: 80%;box-shadow: 0px 0px 3px 2px rgb(204, 204, 166) inset;}
+.top-myshop{height: 200px; box-shadow: var(--shadow); display: flex; justify-content: space-around;}
+.myshop-image{width: 400px; height: 200px;}  
+.myshop-image img{width: 100%; height: 100%;} 
+.myshop-description{font-size: 30px; letter-spacing: 2px; margin-top: 30px;}
+
+.down-myshop{display: flex; height: 250px; justify-content: space-around;}
+.firstImage,.secondImage{height: 100%; cursor: pointer;transition: 0.3s;}
+.secondImage:hover{transform: scale(1.1);}
+.firstImage:hover{transform: scale(1.1);}
+.myshop .midle{text-align: center; margin-top: 10px; font-size: 20px;}
+.down-myshop img{height: 100%; margin-top: 3px;}
+/* ***********************************************************************
+style the user ads or products
+********************************************************************** */
+.parent-add-container{display: grid; place-items: center; margin-top: 30px;}
+.user-products{display: flex; margin-top: 20px; flex-wrap: wrap; width: 70%; justify-content: space-around;}
+.product-image{width: 200px; height: 200px; margin-top: 20px;}
+.product-image img{width: 100%; height: 100%;}
+.ads-container{cursor: pointer;}
+.product-location,.product-name,.price,.amount{font-size: 10pt}
+.shop-button{margin-bottom: 20px;}
+.product-price{display: flex; width: 100px; justify-content: space-between;}
+/* ****************************************************************
+stye the footer
+*************************************************************** */
+.footer{display: grid; place-items: center; width: 100vw; height: 200px; background-color: black; color: #fff;}
+
+/* ******************************************************************************
+AUTH COMPONENST STYLE ARE THEN BELOW
+**************************************************************************** */
+
+/* Style for Registration and login form  */
+.register-container{display: grid; place-items: center; height: 90vh;}
+.register-form{box-shadow: var(--shadow); width: 280px;}
+ label,.form-input{display: block; margin-top: 5px;}
+ .form-input{ padding: 2px 0px 1px 20px; width: 100%; height: 40px;}
+.register-form input[type='submit']{background-color: var(--bg2); color: #fff; cursor: pointer;}
+.register-top{display: flex; justify-content: space-between; align-items: center; height: 45px; 
+ width: 280px;}
+.register-Content{background-color: var(--bg2); color: #fff; padding-top: 10px; height: 100%; width: 70%; }
+.form-logo{width: 30%; height: 45px;}
+.form-logo img{width: 100%; height: 100%;}
+
+/* Styles for user profiles pages */
+.top-user_profile{display: flex; justify-content: space-between; align-items: center;}
+.min-midle-user-profile{display: flex; justify-content: space-between; align-items: center; margin-top: 20px;}
+.footer-user-profile{box-shadow: var(--shadow); margin-top: 20px; height: 150px;}
+.add-post-button{width: 50%; cursor: pointer; margin-top: 50px; background-color: var(--bg2); height: 40px; color: #fff;}
+
+/* Style for the form */
+.post-form-input{width: 100%; height: 40px;}
