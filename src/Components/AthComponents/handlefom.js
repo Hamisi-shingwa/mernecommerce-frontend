@@ -7,7 +7,7 @@ import axios from 'axios'
       const navgate = useNavigate()
       //function that put form data
      const createAds = async(formData)=>{
-        const response = await fetch('http://localhost:5007/api/postads',{
+        const response = await fetch('https://amibackend.onrender.com/api/postads',{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(formData)

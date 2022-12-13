@@ -9,7 +9,7 @@ export const HandleContext = ()=>{
 
   const signup = async (signup_data)=>{
       //fetch data
-    const response = await fetch('http://localhost:5007/api/signin',{
+    const response = await fetch('https://amibackend.onrender.com/api/signin',{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body: JSON.stringify(signup_data)
@@ -25,7 +25,7 @@ export const HandleContext = ()=>{
   }
   //Run script for login in services
   const signin = async(signin_data)=>{
-    const response = await fetch('http://localhost:5007/api/signup',{
+    const response = await fetch('https://amibackend.onrender.com/api/signup',{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body: JSON.stringify(signin_data)
