@@ -11,7 +11,7 @@
     root{  --body: #fff; --bg:  rgba(0,0,85,1);  --family: Verdana, Geneva, Tahoma, sans-serif; 
         --shadow: 0px 0px 3px 2px rgb(204, 204, 166) inset;}
     .app{width: 98vw;}
-    .navbar{justify-content: center;}
+    .navbar{justify-content: center; position: sticky; top: 0;}
     .navbar .logo{display: none;}
     .navbar .aside{font-size: 10pt; margin-left: 0;}
     .navbar-hiden{justify-content: center;}
@@ -30,7 +30,7 @@
     .filter-container{width: 670px;}
 
     /* Search style */
-    .search{display: block;}
+    .search{display: flex; flex-direction: column; justify-content: space-around;}
     /* Style Categories and my shop*/
     .myshop{width: 100%; box-shadow: none; margin-top: 20px;}
     .category-myshop{flex-direction: column;}
