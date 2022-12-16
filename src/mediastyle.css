@@ -5,6 +5,12 @@
    .navbar .aside{display: flex; justify-content: space-between; margin: 0; }
    .navbar-hiden2{display: flex; justify-content: space-between; transform: translateY(-5px);}
    
+   /* Style the Registration and login form  component */
+   .middle-register{width: 70%; margin:0px 10% 100px 0px;}
+   .middle-register-signup,.middle-register-password-reset{
+    display: flex; width: 100%; justify-content: space-around;
+}
+   
 }
 
 @media(max-width:507px){
@@ -65,7 +71,18 @@ AUTH COMPONENST STYLE ARE THEN BELOW
 .ads-post-content{font-size: 10pt;}
 .add-post-button{width: 100%;}
 .min-midle-user-profile,.footer-user-profile{font-size: 10pt;}
+
+/* Style the Registration and login form  component */
+label{ margin-bottom: -20px; font-size: 10pt;}
+.register-Content{font-size: 10pt; margin-top: 10px;}
+.register-Content-third{font-size: 10pt; width: 50%; padding-left: 50px;}
+.middle-register{width: 100%; margin:0px 0px 100px 20px;}
+.middle-register-signup,.middle-register-password-reset{
+    display: flex; width: 90%; justify-content: space-between; font-size: 10pt;
 }
+}
+
+
 
 @media(max-width:435px){
     /* lets start to style ads product in common mobile device include sumsung A50> and iphone 6>*/

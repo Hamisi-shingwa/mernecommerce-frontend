@@ -104,16 +104,28 @@ AUTH COMPONENST STYLE ARE THEN BELOW
 **************************************************************************** */
 
 /* Style for Registration and login form  */
-.register-container{display: grid; place-items: center; height: 90vh;}
-.register-form{box-shadow: var(--shadow); width: 280px;}
- label,.form-input{display: block; margin-top: 5px;}
- .form-input{ padding: 2px 0px 1px 20px; width: 100%; height: 40px;}
+.register-container{display: flex; flex-direction: column; align-items: center; justify-content: space-between; height: 90vh; 
+ }
+.register-form{ width: 80%;}
+ label,.form-input{display: block; margin-top: 20px;}
+ label{ margin-bottom: -20px;}
+ .form-input{ padding: 5px 0px 1px 20px; width: 100%; height: 40px; border-radius: 5px; border: none; outline: none;
+    box-shadow: 0px 0px 1px 1px rgb(194, 186, 186);}
+ .form-input-submit{ padding: 5px 0px 1px 20px; width: 100%; height: 40px; border-radius: 10px; margin-top: 5px;
+border: none;}
 .register-form input[type='submit']{background-color: var(--bg2); color: #fff; cursor: pointer;}
 .register-top{display: flex; justify-content: space-between; align-items: center; height: 45px; 
- width: 280px;}
-.register-Content{background-color: var(--bg2); color: #fff; padding-top: 10px; height: 100%; width: 70%; }
-.form-logo{width: 30%; height: 45px;}
-.form-logo img{width: 100%; height: 100%;}
+ width: 80%; box-shadow: 0px 0px 2px 2px rgb(194, 186, 186); }
+/* .register-Content-first{ padding-top: 10px; height: 100%; width: 70%;} */
+.register-Content{ padding-top: 10px; height: 100%; width: 70%;}
+.register-Content-third {margin-right: 20px; color: var(--bg2);}
+.middle-register{width:80%;margin:0px 10% 100px 0px;}
+.middle-register-signup,.middle-register-password-reset{
+    display: flex; width: 50%; justify-content: space-around;
+}
+.error{color:red}
+.isLoading-element{width: 40px; height: 40px; border: 2px solid green; border-radius: 100%;}
+
 
 /* Styles for user profiles pages */
 .top-user_profile{display: flex; justify-content: space-between; align-items: center;}

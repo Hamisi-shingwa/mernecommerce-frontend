@@ -4,6 +4,7 @@ import axios from 'axios'
 
   export const FormHadle = ()=>{
       const [error,setError] = useState(null)
+      const [isLoading,setIsloading] = useState(false)
       const navgate = useNavigate()
       //function that put form data
      const createAds = async(formData)=>{

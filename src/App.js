@@ -19,7 +19,6 @@ export default function App() {
     <Auth_main/>
     </AuthContext>
     </BrowserRouter>
-    <Footer/>
     </div>
       )
     }
