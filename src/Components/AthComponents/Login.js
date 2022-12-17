@@ -24,7 +24,9 @@ const [inputData, setInputData] = useState({
 //handleChange method is called when each input field is changed and only 
 //what it does is to update the value stateHooks to that of input field 
 const handleChange = (e)=>{
-    setInputData({...inputData,[e.target.id]:e.target.value})
+  setInputData({...inputData,[e.target.id]:e.target.value})
+  const errorElement= document.querySelector('.error')
+  if(errorElement) setError(null)
 }
 //handleSubmit is method called when form is submited
 //onceis called also signin method is called and pass our stateHooks Data
@@ -32,6 +34,9 @@ const handleSubmit =async  (e)=>{
 e.preventDefault();
 setIsloading(true)
 await signin(inputData)
+//Check if return is error isLoading become false
+if(error!=="") setIsloading(false)
+
 }
 
 //Then Html form to be returned are as bellow

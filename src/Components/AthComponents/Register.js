@@ -10,10 +10,13 @@ import back from '../../images/back.png'
 export default function Register() {
 
 //Here is where signup and error values are distructured from method
-const {signup,error} = HandleContext()
+const {signup,error,setError} = HandleContext()
 
 //below is stateHooks for handling user loading button
 const [isLoading,setIsloading] = useState(false)
+// To allow isLoading proceed be false once error is
+
+
 
 //Then create stateHooks that that contain empty value of our input field
 const [inputData, setInputData] = useState({
@@ -25,13 +28,17 @@ const [inputData, setInputData] = useState({
 //what it does is to update the value stateHooks to that of input field 
 const handleChange = (e)=>{
     setInputData({...inputData,[e.target.id]:e.target.value})
+    const errorElement= document.querySelector('.error')
+    if(errorElement) setError(null)
 }
 //handleSubmit is method called when form is submited
 //onceis called also signin method is called and pass our stateHooks Data
-const handleSubmit =async  (e)=>{
+const handleSubmit = async(e)=>{
 e.preventDefault();
 setIsloading(true)
 await signup(inputData)
+//Check if return is error isLoading become false
+if(error!=="") setIsloading(false)
 }
 
 //Then Html form to be returned are as bellow
@@ -48,7 +55,7 @@ return (
     <input
     className='form-input'
     id="fullname"
-    type='email'
+    type='text'
     placeholder='Full name'
     onChange={handleChange}
 />
@@ -72,14 +79,14 @@ return (
 />
 <input type='submit' value="Signup"  className='form-input-submit'/>
 {error && (
-  <div className='error'>{error && setIsloading(false)}</div>
+  <div className='error'>{error}</div>
 )}
 </form>
 
 <div className='middle-register'>
   <div className='middle-register-signup'>
     <div>Arleady have an account</div>
-    <Link to='/register' className='middleregister-link'> Sign Ip</Link>
+    <Link to='/register' className='middleregister-link'> Sign In</Link>
   </div>
   <div className='middle-register-password-reset'>
     <div>Forgot your password</div>

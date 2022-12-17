@@ -111,7 +111,7 @@ AUTH COMPONENST STYLE ARE THEN BELOW
  label{ margin-bottom: -20px;}
  .form-input{ padding: 5px 0px 1px 20px; width: 100%; height: 40px; border-radius: 5px; border: none; outline: none;
     box-shadow: 0px 0px 1px 1px rgb(194, 186, 186);}
- .form-input-submit{ padding: 5px 0px 1px 20px; width: 100%; height: 40px; border-radius: 10px; margin-top: 5px;
+ .form-input-submit{ padding: 5px 0px 1px 20px; width: 100%; height: 40px; border-radius: 10px; margin-top: 15px;
 border: none;}
 .register-form input[type='submit']{background-color: var(--bg2); color: #fff; cursor: pointer;}
 .register-top{display: flex; justify-content: space-between; align-items: center; height: 45px; 
@@ -123,8 +123,8 @@ border: none;}
 .middle-register-signup,.middle-register-password-reset{
     display: flex; width: 50%; justify-content: space-around;
 }
-.error{color:red}
-.isLoading-element{width: 40px; height: 40px; border: 2px solid green; border-radius: 100%;}
+.error{color:red; font-size: 10pt;}
+.isLoading-element{width: 40px; height: 40px; border: 2px solid green; border-radius: 100%; margin-bottom: 20px;}
 
 
 /* Styles for user profiles pages */
