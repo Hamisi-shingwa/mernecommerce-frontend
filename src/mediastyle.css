@@ -73,6 +73,7 @@ AUTH COMPONENST STYLE ARE THEN BELOW
 .min-midle-user-profile,.footer-user-profile{font-size: 10pt;}
 
 /* Style the Registration and login form  component */
+
 label{ margin-bottom: -20px; font-size: 10pt;}
 .register-Content{font-size: 10pt; margin-top: 10px;}
 .register-Content-third{font-size: 10pt; width: 50%; padding-left: 50px;}
@@ -80,6 +81,8 @@ label{ margin-bottom: -20px; font-size: 10pt;}
 .middle-register-signup,.middle-register-password-reset{
     display: flex; width: 90%; justify-content: space-between; font-size: 10pt;
 }
+
+
 }
 
 
@@ -91,6 +94,13 @@ label{ margin-bottom: -20px; font-size: 10pt;}
  .ads-button-img{width: 100%; height: 40px;}
  .product-image{width: 100%; height: 170px; margin-top:10px;}
  .product-image img{width: 100%; height: 100%;}
+
+ /* * ******************************************************************************
+AUTH COMPONENST STYLE FOR THIS MEDIA ARE THEN BELOW 
+**************************************************************************** */
+
+/* Style the Registration and login form  component */
+.middle-register-qstion{width:  100%;}
 }
 
 

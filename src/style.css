@@ -104,7 +104,7 @@ AUTH COMPONENST STYLE ARE THEN BELOW
 **************************************************************************** */
 
 /* Style for Registration and login form  */
-.register-container{display: flex; flex-direction: column; align-items: center; justify-content: space-between; height: 90vh; 
+.register-container{display: flex; flex-direction: column; align-items: center; justify-content: space-between; height: 100vh; 
  }
 .register-form{ width: 80%;}
  label,.form-input{display: block; margin-top: 20px;}
@@ -119,12 +119,20 @@ border: none;}
 /* .register-Content-first{ padding-top: 10px; height: 100%; width: 70%;} */
 .register-Content{ padding-top: 10px; height: 100%; width: 70%;}
 .register-Content-third {margin-right: 20px; color: var(--bg2);}
-.middle-register{width:80%;margin:0px 10% 100px 0px;}
-.middle-register-signup,.middle-register-password-reset{
-    display: flex; width: 50%; justify-content: space-around;
-}
+.middle-register{width:80%;}
+.middle-register-signup,.middle-register-password-reset{  width: 50%; justify-content: space-around; margin-bottom: 10px;}
+.middle-register-password-reset *{ display: inline-block; width: 50%; justify-content: space-around;}
+.middle-register-signup *{ display: inline-block; width: 50%; justify-content: space-around;}
+  
+
 .error{color:red; font-size: 10pt;}
-.isLoading-element{width: 40px; height: 40px; border: 2px solid green; border-radius: 100%; margin-bottom: 20px;}
+.isLoading-element{width: 40px; height: 40px; border: 2px solid green; border-bottom: none; border-radius: 100%; margin-bottom: 90px;
+border-right: none; animation: preloader 1s infinite linear;}
+
+@keyframes preloader {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg)}
+}
 
 
 /* Styles for user profiles pages */
