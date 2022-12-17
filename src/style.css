@@ -119,12 +119,12 @@ border: none;}
 /* .register-Content-first{ padding-top: 10px; height: 100%; width: 70%;} */
 .register-Content{ padding-top: 10px; height: 100%; width: 70%;}
 .register-Content-third {margin-right: 20px; color: var(--bg2);}
-.middle-register{width:80%;}
+.middle-register{width:80%; margin-top: 20px;}
 .middle-register-signup,.middle-register-password-reset{  width: 50%; justify-content: space-around; margin-bottom: 10px;}
 .middle-register-password-reset *{ display: inline-block; width: 50%; justify-content: space-around;}
 .middle-register-signup *{ display: inline-block; width: 50%; justify-content: space-around;}
 .error{color:red; font-size: 10pt;}
-.isLoading-element{width: 40px; height: 40px; border: 2px solid green; border-bottom: none; border-radius: 100%; margin-bottom: 90px;
+.isLoading-element{width: 40px; height: 40px; border: 2px solid green; border-bottom: none; border-radius: 100%; 
 border-right: none; animation: preloader 1s infinite linear;}
 .form-footer-element{position: absolute; bottom: 0;}
 .form-footer{display: flex; justify-content: center; align-items: center;}
