@@ -84,11 +84,11 @@ return (
 )}
 
 <div className='middle-register'>
-<div className='middle-register-signup'>
+   <div className='middle-register-signup'>
     <div className='middle-register-qstion'>Arleady have an account</div>
     <Link to='/login' className='middle-register-link'> Sign In</Link>
   </div>
-  <div className='middle-register-password-reset'>
+<div className='middle-register-password-reset'>
     <div className='middle-register-qstion'>Forgot your password</div>
     <Link to='/register' className='middle-register-link'>Reset it</Link>
   </div>

@@ -6,7 +6,6 @@
    .navbar-hiden2{display: flex; justify-content: space-between; transform: translateY(-5px);}
    
    /* Style the Registration and login form  component */
-   .middle-register{width: 70%; margin:0px 10% 100px 0px;}
    .middle-register-signup,.middle-register-password-reset{
     display: flex; width: 100%; justify-content: space-around;
 }
@@ -79,8 +78,8 @@ label{ margin-bottom: -20px; font-size: 11pt;}
 .register-Content-third{font-size: 10pt; width: 50%; padding-left: 50px;}
 /* .middle-register{width: 90%;} */
 .middle-register-signup,.middle-register-password-reset{
-    display: flex; width: 90%; justify-content: space-between; font-size: 10pt;
-}
+    display: flex; width: 100%; justify-content: space-between; font-size: 10pt; 
+} 
 
 
 }
