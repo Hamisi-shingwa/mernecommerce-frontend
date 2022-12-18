@@ -72,7 +72,6 @@ return (
 {error && (
   <div className='error'>{error}</div>
 )}
-</form>
 
 <div className='middle-register'>
   <div className='middle-register-signup'>
@@ -84,6 +83,10 @@ return (
     <Link to='/register' className='middle-register-link'>Reset it</Link>
   </div>
 </div>
+
+</form>
+
+
 
  {isLoading ? (
      <div className='isLoading'>

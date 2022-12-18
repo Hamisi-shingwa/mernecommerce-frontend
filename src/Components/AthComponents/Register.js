@@ -50,6 +50,7 @@ return (
     <div className='register-Content'>Sign Up</div>
     <Link to='/login' className='register-Content-third'>SignIn</Link>
 </div>
+
 <form className='register-form' onSubmit={handleSubmit}>
 <label>Full Name</label>
     <input
@@ -81,18 +82,20 @@ return (
 {error && (
   <div className='error'>{error}</div>
 )}
-</form>
 
-<div className='middle-register middle-register-footer'>
-  <div className='middle-register-signup'>
+<div className='middle-register'>
+<div className='middle-register-signup'>
     <div className='middle-register-qstion'>Arleady have an account</div>
-    <Link to='/register' className='middle-register-link'> Sign In</Link>
+    <Link to='/login' className='middle-register-link'> Sign In</Link>
   </div>
   <div className='middle-register-password-reset'>
     <div className='middle-register-qstion'>Forgot your password</div>
     <Link to='/register' className='middle-register-link'>Reset it</Link>
   </div>
 </div>
+
+</form>
+
 
 {isLoading ? (
      <div className='isLoading'>
@@ -101,7 +104,6 @@ return (
  ):(
   null
  )}
-
 
  <div className='form-footer'>
  <div className='form-footer-element'>Powerd by AmyCs</div>
