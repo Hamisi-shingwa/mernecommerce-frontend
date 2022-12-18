@@ -46,7 +46,7 @@ height: 100%;   position: absolute; top: 0; left: 0;}
 
 .search_content .welcome,.below_welcome{ margin-left: 10px; font-size: 15pt; padding-top: 10px;}
 .below_welcome{font-size: 10px;}  
-.search_bar{display: flex; margin-top: 20px; height: 12%;
+.search_bar{display: flex; margin-top: 20px; height: 14%;
     border: 2px solid; align-items: center; justify-content: center;
     background-color: rgba(242, 242, 242, 1); border-radius: 20px;}
 
