@@ -57,9 +57,8 @@ style the user ads or products
 .user-products{display: flex; margin-top: 20px; flex-wrap: wrap; width: 90%; justify-content: space-around;}
 .product-image{width: 100px; height: 50px;}
 .product-image img{width: 100%; height: 100%;}
-.ads-container{cursor: pointer; height: fit-content;}
 
-.ads-container{ width: 45%; margin-bottom: 5px; height: fit-content;}
+.ads-container{ width: 45%; margin-bottom: 5px; height: fit-content; margin-left: 0px;}
 .user-products{width: 100%;}
 .ads-button-img{width: 100%; height: 40px;}
 .product-image{width: 100%; height: 120px;}
