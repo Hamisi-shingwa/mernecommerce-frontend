@@ -16,7 +16,9 @@ export default class Home_main extends Component {
         <Jumbotron/>
         <Categories/>
         <Filter/>
-        <Ads/>
+        <div className='media-ads'>
+            <Ads/>
+        </div>
         <Footer/>
       </div>
     )

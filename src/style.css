@@ -72,7 +72,7 @@ styel categories and myshop
 .category_image{width: 50px; height: 80%;}
 .category_image img{width: 100%; height: 100%;}
 
-.myshop{width: 80%;box-shadow: 0px 0px 3px 2px rgb(204, 204, 166) inset;}
+.myshop{width: 80%;box-shadow: 0px 0px 3px 2px rgb(204, 204, 166) inset; overflow-y: scroll; max-height: 500px;}
 .top-myshop{height: 200px; box-shadow: var(--shadow); display: flex; justify-content: space-around;}
 .myshop-image{width: 400px; height: 200px;}  
 .myshop-image img{width: 100%; height: 100%;} 
@@ -84,17 +84,29 @@ styel categories and myshop
 .firstImage:hover{transform: scale(1.1);}
 .myshop .midle{text-align: center; margin-top: 10px; font-size: 20px;}
 .down-myshop img{height: 100%; margin-top: 3px;}
+
 /* ***********************************************************************
 style the user ads or products
 ********************************************************************** */
-.parent-add-container{display: grid; place-items: center; margin-top: 30px;}
-.user-products{display: flex; margin-top: 20px; flex-wrap: wrap; width: 70%; justify-content: space-around;}
-.product-image{width: 200px; height: 200px; margin-top: 20px;}
-.product-image img{width: 100%; height: 100%;}
-.ads-container{cursor: pointer;}
+.media-ads{display: none;}
+.ads-header{color: var(--bg2); font-weight: bold;}
+.parent-add-container{display: grid; margin-top: 30px; }
+.user-products{display: flex; margin-top: 20px; flex-wrap: wrap; width: 100%; justify-content: space-around; 
+   }
+.product-image{width: 200px; height: 150px;}
+.product-image img{width: 100%; height: 100%; border-radius: 5px;}
+.rounded-for-item-legth{ width: 25px; height: 30px; border-radius: 10px; text-align: center;
+margin-top: -15px; position: relative; background-color: #fff; color: var(--bg2) ;}
+.product-name-time{display: flex; justify-content: space-between;}
+.ads-container{cursor: pointer; height: 210px; position: relative; box-shadow:0px 0px 2px 2px rgb(194, 186, 186) ;
+margin-top: 10px;}
 .product-location,.product-name,.price,.amount{font-size: 10pt}
+.product-name{max-width: 80%;}
 .shop-button{margin-bottom: 20px;}
-.product-price{display: flex; width: 100px; justify-content: space-between;}
+.product-price{display: flex; width: 100px; justify-content: space-between; color: var(--bg2); font-weight: bold;}
+.uploaded-on{font-size: 10pt;}
+
+
 /* ****************************************************************
 stye the footer
 *************************************************************** */
