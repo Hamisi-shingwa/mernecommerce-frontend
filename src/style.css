@@ -107,7 +107,7 @@ style the user ads or products
 margin-top: -15px; position: relative; background-color: #fff; color: var(--bg2) ;}
 .product-name-time{display: flex; justify-content: space-between;}
 .ads-container{cursor: pointer; height: 210px; position: relative; box-shadow:0px 0px 2px 2px rgb(194, 186, 186) ;
-margin-top: 10px; margin-left: 5px;}
+margin-top: 10px; margin-left: 3px;}
 .product-location,.product-name,.price,.amount{font-size: 10pt}
 .product-name{max-width: 80%;}
 .shop-button{margin-bottom: 20px;}
