@@ -9,7 +9,8 @@
    .middle-register-signup,.middle-register-password-reset{
     display: flex; width: 100%; justify-content: space-around;
 }
-   
+    /* style for jumbotron container */
+    .jumbotron-desktop-search{display: none;}
 }
 
 @media(max-width:507px){

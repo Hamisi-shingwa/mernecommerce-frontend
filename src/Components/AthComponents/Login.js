@@ -10,7 +10,7 @@ import back from '../../images/back.png'
 export default function Login() {
 
 //Here is where signin and error values are distructured from method
-const {signin,error} = HandleContext()
+const {signin,error,setError} = HandleContext()
 
 //below is stateHooks for handling user loading button
 const [isLoading,setIsloading] = useState(false)
