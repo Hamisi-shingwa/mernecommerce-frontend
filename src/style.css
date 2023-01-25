@@ -39,7 +39,11 @@ display: flex; flex-direction: column; justify-content: space-around; align-item
 align-items: center;}
 .post-container-symbol{width: 70px; height: 70px; border-radius: 100%;  margin-top: 20px;
 background-color: #c58b6a; color: var(--bg2); display: grid; place-items: center; font-size: 40px; cursor: pointer;}
-
+.jumbotron-shadow{
+    width: 100px;
+    background-color: var(--bg2);
+    height: 100%; position: absolute; top: 0; left: 0; width: 70%; opacity: 0.1;
+}
 /* Style for filter component */
 .filter-element{ box-shadow: var(--shadow); color: var(--bg2); font-weight: bold;}
 

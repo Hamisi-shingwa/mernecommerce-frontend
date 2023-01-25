@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className='aside'>
           <Link to='/'>Home</Link>
           <a href='/' className='services' onClick={handleClick}>Services</a>
-          <Link to='/'>AbouteMe</Link>
+          <Link to='/'>AbouteUs</Link>
           <Link to='/login'>Login</Link>
       </div>
       <div className='link'>
