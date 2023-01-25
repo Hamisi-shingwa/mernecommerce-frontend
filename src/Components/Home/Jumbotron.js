@@ -19,7 +19,7 @@ export default function Jumbotron() {
           <div className='post-container-detail'>Post your add for free</div>
         </div>
       </div>
-      <div className='jumbotron-shadow'></div>
+      {/* <div className='jumbotron-shadow'></div> */}
     </div>
   )
 }
