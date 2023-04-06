@@ -10,7 +10,7 @@ export default function Search() {
           <input type='text' className='search_input' placeholder='Searching...'/>
       </div>
       <div className='search_content'>
-          <div className='welcome'>Welcome to AmyStore</div>
+          <div className='welcome'>Welcome to InSeller</div>
           <div className='below_welcome'>
               <span className='yellow_span'></span>since 2022
               <span className='yellow_span'></span>let's us anounce your business

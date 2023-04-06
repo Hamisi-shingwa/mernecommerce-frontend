@@ -1,3 +1,4 @@
+// import 'bootstrap/dist/css/bootstrap.min.css'
 import React,{useState,useEffect} from 'react'
 import Navbar from './AuthNavbar.js'
 import person from '../../images/person.png'
